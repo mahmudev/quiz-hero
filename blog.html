@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="preconnect" href="https://fonts.googleapis.com" />
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+	<link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<title>Quiz Hero</title>
+	<script src="https://cdn.tailwindcss.com"></script>
+	<script>
+	tailwind.config = {
+		theme: {
+			extend: {
+				fontFamily: {
+					common: ["Rubik", "sans-serif"],
+				},
+			},
+		},
+	};
+	</script>
+</head>
+
+<body class="bg-white font-common">
+	<!-- Header/Navbar section start -->
+	<header class="h-16 flex items-center shadow-sm">
+		<nav class="flex justify-between items-center w-9/12 mx-auto">
+			<div class="text-zinc-800 font-bold uppercase">
+				<h1 class="text-lg">Quiz <span class="text-green-700">HERO</span></h1>
+				<p class="text-[10px] font-normal capitalize -mt-1"> Get ready to Quiz and be amazed! </p>
+			</div>
+			<button onclick="window.location.href = 'index.html'" class="bg-green-600 font-light text-sm px-5 py-1 rounded text-white"> Quiz Hero</button>
+		</nav>
+	</header>
+	<!-- Header/Navbar section end -->
+	<main>
+		<section class="bg-white">
+			<div class="py-4 px-4 mx-auto max-w-screen-xl sm:py-16 lg:px-6">
+				<h2 class="mb-8 text-3xl tracking-tight font-bold text-gray-900">
+            1. what is the difference between .map .filter .forEach .find in
+            javascript?
+          </h2>
+				<div class="grid pt-8 text-left md:gap-16  md:grid-cols-2">
+					<div>
+						<div class="mb-10">
+							<h3 class="flex items-center mb-4 text-lg font-medium">
+                  <svg
+                    class="flex-shrink-0 mr-2 w-5 h-5 text-gray-500 dark:text-gray-400"
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-8-3a1 1 0 00-.867.5 1 1 0 11-1.731-1A3 3 0 0113 8a3.001 3.001 0 01-2 2.83V11a1 1 0 11-2 0v-1a1 1 0 011-1 1 1 0 100-2zm0 8a1 1 0 100-2 1 1 0 000 2z"
+                      clip-rule="evenodd"
+                    ></path>
+                  </svg>
+                  .map() method
+                </h3>
+							<p class="text-gray-500 dark:text-gray-400"> The .map() method creates a new array with the results of calling a provided function on every element in the calling array. In other words, it returns a new array with the same length as the original array, but with each element transformed according to the provided function. </p>
+							<h2 class="my-4 text-lg font-medium text-gray-900">Example:</h2>
+							<div class="bg-gray-800 p-4 rounded-md flex items-center content-center"> <code class="text-green-400">
+                    const numbers = [1, 2, 3, 4, 5];<br />
+                    const doubledNumbers = numbers.map((num) => num * 2);<br />
+                    console.log(doubledNumbers); // [2, 4, 6, 8, 10]<br />
+                  </code> </div>
+						</div>
+						<div class="mb-10">
+							<h3 class="flex items-center mb-4 text-lg font-medium">
+                  <svg
+                    class="flex-shrink-0 mr-2 w-5 h-5 text-gray-500 dark:text-gray-400"
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-8-3a1 1 0 00-.867.5 1 1 0 11-1.731-1A3 3 0 0113 8a3.001 3.001 0 01-2 2.83V11a1 1 0 11-2 0v-1a1 1 0 011-1 1 1 0 100-2zm0 8a1 1 0 100-2 1 1 0 000 2z"
+                      clip-rule="evenodd"
+                    ></path>
+                  </svg>
+                  .filter() method
+                </h3>
+							<p class="text-gray-500 dark:text-gray-400"> The .filter() method creates a new array with all elements that pass the test implemented by the provided function. In other words, it returns a new array with only the elements that meet the specified condition. </p>
+							<h2 class="my-4 text-lg font-medium text-gray-900">Example:</h2>
+							<div class="bg-gray-800 p-4 rounded-md flex items-center content-center"> <code class="text-green-400">
+                    const numbers = [1, 2, 3, 4, 5];<br />
+                    const evenNumbers = numbers.filter((num) => num % 2 ===
+                    0);<br />
+                    console.log(evenNumbers); // [2, 4]<br />
+                  </code> </div>
+						</div>
+					</div>
+					<div>
+						<div class="mb-10">
+							<h3 class="flex items-center mb-4 text-lg font-medium">
+                  <svg
+                    class="flex-shrink-0 mr-2 w-5 h-5 text-gray-500 dark:text-gray-400"
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-8-3a1 1 0 00-.867.5 1 1 0 11-1.731-1A3 3 0 0113 8a3.001 3.001 0 01-2 2.83V11a1 1 0 11-2 0v-1a1 1 0 011-1 1 1 0 100-2zm0 8a1 1 0 100-2 1 1 0 000 2z"
+                      clip-rule="evenodd"
+                    ></path>
+                  </svg>
+                  .forEach() method
+                </h3>
+							<p class="text-gray-500 dark:text-gray-400"> The .forEach() method executes a provided function once for each array element. It doesn't return anything, but can be useful for performing a side effect on each element in the array. </p>
+							<h2 class="my-4 text-lg font-medium text-gray-900">Example:</h2>
+							<div class="bg-gray-800 p-4 rounded-md flex items-center content-center"> <code class="text-green-400">
+                    const numbers = [1, 2, 3, 4, 5];<br> numbers.forEach((num) =>
+                    console.log(num * 2));<br> // Output: 2 4 6 8 10
+                  </code> </div>
+						</div>
+						<div class="mb-10">
+							<h3 class="flex items-center mb-4 text-lg font-medium">
+                  <svg
+                    class="flex-shrink-0 mr-2 w-5 h-5 text-gray-500 dark:text-gray-400"
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-8-3a1 1 0 00-.867.5 1 1 0 11-1.731-1A3 3 0 0113 8a3.001 3.001 0 01-2 2.83V11a1 1 0 11-2 0v-1a1 1 0 011-1 1 1 0 100-2zm0 8a1 1 0 100-2 1 1 0 000 2z"
+                      clip-rule="evenodd"
+                    ></path>
+                  </svg>
+                  .find() method
+                </h3>
+							<p class="text-gray-500 dark:text-gray-400"> The .find() method returns the value of the first element in the array that satisfies the provided testing function. If no values satisfy the testing function, undefined is returned. </p>
+							<h2 class="my-4 text-lg font-medium text-gray-900">Example:</h2>
+							<div class="bg-gray-800 p-4 rounded-md flex items-center content-center"> <code class="text-green-400">
+                    const numbers = [1, 2, 3, 4, 5];<br> const evenNumber =
+                    numbers.find((num) => num % 2 === 0);<br>
+                    console.log(evenNumber); // 2
+                  </code> </div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="bg-white">
+			<div class="px-4 mx-auto max-w-screen-xl lg:px-6">
+				<h2 class="mb-8 text-3xl tracking-tight font-bold text-gray-900">
+            2. what is the difference between local Storage, session Storage and
+            cookies in javascript ?
+          </h2>
+				<div class="grid pt-8 text-left  md:gap-16 md:grid-cols-2">
+					<div>
+						<div class="mb-10">
+							<h3 class="flex items-center mb-4 text-lg font-medium">
+                  <svg
+                    class="flex-shrink-0 mr-2 w-5 h-5 text-gray-500 dark:text-gray-400"
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-8-3a1 1 0 00-.867.5 1 1 0 11-1.731-1A3 3 0 0113 8a3.001 3.001 0 01-2 2.83V11a1 1 0 11-2 0v-1a1 1 0 011-1 1 1 0 100-2zm0 8a1 1 0 100-2 1 1 0 000 2z"
+                      clip-rule="evenodd"
+                    ></path>
+                  </svg>
+                  Local Storage:
+                </h3>
+							<ul class="list-disc text-gray-500 px-4">
+								<li>Stores data with no expiration date</li>
+								<li> Data is stored on the client-side and persists even after the browser is closed </li>
+								<li> Can be accessed across different browser windows and tabs that share the same origin </li>
+							</ul>
+						</div>
+					</div>
+					<div class="mb-10">
+						<h3 class="flex items-center mb-4 text-lg font-medium">
+                <svg
+                  class="flex-shrink-0 mr-2 w-5 h-5 text-gray-500 dark:text-gray-400"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-8-3a1 1 0 00-.867.5 1 1 0 11-1.731-1A3 3 0 0113 8a3.001 3.001 0 01-2 2.83V11a1 1 0 11-2 0v-1a1 1 0 011-1 1 1 0 100-2zm0 8a1 1 0 100-2 1 1 0 000 2z"
+                    clip-rule="evenodd"
+                  ></path>
+                </svg>
+                Session Storage:
+              </h3>
+						<ul class="list-disc text-gray-500 px-4">
+							<li>Stores data for the duration of a session</li>
+							<li> Data is stored on the client-side and is deleted when the browser is closed </li>
+							<li> Can be accessed across different browser windows and tabs that share the same origin </li>
+						</ul>
+					</div>
+				</div>
+				<div>
+					<div class="mb-10">
+						<h3 class="flex items-center mb-4 text-lg font-medium">
+                <svg
+                  class="flex-shrink-0 mr-2 w-5 h-5 text-gray-500 dark:text-gray-400"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-8-3a1 1 0 00-.867.5 1 1 0 11-1.731-1A3 3 0 0113 8a3.001 3.001 0 01-2 2.83V11a1 1 0 11-2 0v-1a1 1 0 011-1 1 1 0 100-2zm0 8a1 1 0 100-2 1 1 0 000 2z"
+                    clip-rule="evenodd"
+                  ></path>
+                </svg>
+                Cookies:
+              </h3>
+						<ul class="list-disc text-gray-500 px-4">
+							<li>Stores small amounts of data with an expiration date</li>
+							<li> Data is stored on the client-side and persists even after the browser is closed if the expiration date hasn't passed </li>
+							<li> Can be accessed across different browser windows and tabs that share the same origin, as well as different domains if the cookie is set to be accessible to those domains </li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="bg-white">
+			<div class="px-4 mx-auto max-w-screen-xl lg:px-6">
+				<h2 class="mb-8 text-3xl tracking-tight font-bold text-gray-900">
+            3. What is an event loop in JavaScript ?
+          </h2>
+				<div class="mb-10">
+					<p class=" text-gray-500 px-4"> An event loop is a constantly running loop in JavaScript that listens for asynchronous events and executes their corresponding callback functions when they are ready. By efficiently handling asynchronous code execution, the event loop improves the overall performance and responsiveness of JavaScript applications. Understanding how the event loop works is crucial for writing efficient and scalable code. </p>
+				</div>
+			</div>
+		</section>
+		<section class="bg-white">
+			<div class="px-4 mx-auto max-w-screen-xl lg:px-6">
+				<h2 class="mb-8 text-3xl tracking-tight font-bold text-gray-900">
+            4. how does quizTimer() function work ?
+          </h2>
+				<div class="mb-10  text-gray-500 px-4">
+					<p class="py-4">The 'quizTimer' function is a timer that takes one argument called 'dismiss', which is a boolean. If 'dismiss' is true, the function clears the interval timer and stops the timer. Otherwise, it starts a new interval timer that runs every 1000ms (or 1 second).</p> Within the interval timer, the function updates the timer display on the HTML document by calculating the minutes and seconds and updating the 'innerHTML' of an element with the id 'count'. It also checks whether the count has gone over 60 seconds and alternates the text color between red-300 and red-700 every second.
+					<p class="py-4">The 'count' variable keeps track of the number of seconds passed since the timer started, and it gets incremented by one every second.</p>
+				</div>
+			</div>
+		</section>
+		<section class="bg-white">
+			<div class="px-4 mx-auto max-w-screen-xl lg:px-6">
+				<h2 class="mb-8 text-3xl tracking-tight font-bold text-gray-900">
+            5. how does chooseQuiz() function work ?
+          </h2>
+				<div class="mb-10  text-gray-500 px-4">
+					<p class="py-4">The 'chooseQuiz' function takes two arguments: 'index' and 'givenAns'. The 'index' parameter is used to identify which quiz question is being answered, and 'givenAns' is the answer that the user has selected for that question.</p> The function first checks whether the user has already answered this question by searching through the 'answers' array to see if there is an existing answer object with the same 'id' as the current quiz question. If an existing answer object is found, the function updates the 'givenAns' property of that object with the user's current answer.
+					<p class="py-4">If an answer object is not found for the current quiz question, the function creates a new answer object and adds it to the 'answers' array with the current 'quizData[index]' and 'givenAns' properties.</p> Finally, the 'displayAnswers' function is called to update the UI and display the user's answers. </div>
+			</div>
+		</section>
+	</main>
+	<!-- Footer section start -->
+	<footer class="py-10 text-center text-sm"> Copyright © 2023 Quiz Hero All Rights Reserved. </footer>
+	<!-- Footer section end -->
+</body>
+
+</html>
